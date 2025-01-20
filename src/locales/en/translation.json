@@ -1,0 +1,12 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About"
+  },
+  "notfound": {
+    "notfoundpage": "Page not found",
+    "back-home-error": "Back to home",
+    "ErrorPage": "Error Page",
+    "Error Page-1": "It seems something went wrong. Please try again."
+  }
+}
