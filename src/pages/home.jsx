@@ -29,14 +29,14 @@ const Home = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-#2c3e50 to-#fd746c overflow-hidden w-full">
       <div className="magic-stars"></div>
-      <header className="min-h-screen flex flex-col items-center justify-center text-white relative">
+      <header className="min-h-screen flex flex-col items-center text-center justify-center text-white relative">
         <img
           src="/assets/images/2519813_9c13a.gif"
           className="App-logo h-40 pointer-events-none"
           alt="logo"
         />
         <p className="text-4xl">Coming Soon</p>
-        <p className="text-lg">
+        <p className="text-lg text-center">
           Thank you for visiting.Website Under Construction
         </p>
         {/* <Link className="text-blue-400" to="/user/:id">
@@ -45,14 +45,14 @@ const Home = () => {
         <div className="flex gap-4">
           <Link
             to="/user/:id"
-            className="w-40 sm:w-26 mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+            className="w-32 md:w-40  text-sm md:text-lg mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
             // onClick={() => navigate("/404")}
           >
             Authors Details
           </Link>
           <a
             href="https://wh.ms/201005550808"
-            className="w-40 sm:w-26 mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+            className="w-32 md:w-40 text-sm md:text-lg  mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
             target="_blank"
             // onClick={() => navigate("/error-page")}
           >
