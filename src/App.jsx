@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
 
         {/* User details page */}
-        <Route path="/user/:id" element={<UserDetails />} />
+        <Route path="company" element={<UserDetails />} />
 
         {/* Route for the error page */}
         <Route path="error-page" element={<ErrorPage />} />

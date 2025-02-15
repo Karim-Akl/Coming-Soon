@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LoadingPage from "./loading-page"; // Ensure the correct path
 import "../styles/home.css"; // Still used for animation
-import { createStars } from "./utils"; // تأكد من المسار الصحيح
+import { createStars } from "./utils";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (!loading) {
-      createStars(); // تأكد من استدعاء createStars بعد انتهاء التحميل
+      createStars();
     }
   }, [loading]);
 
@@ -39,22 +38,17 @@ const Home = () => {
         <p className="text-lg text-center">
           Thank you for visiting.Website Under Construction
         </p>
-        {/* <Link className="text-blue-400" to="/user/:id">
-          Auther Details
-        </Link> */}
         <div className="flex gap-4">
           <Link
-            to="/user/:id"
-            className="w-32 md:w-40  text-sm md:text-lg mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
-            // onClick={() => navigate("/404")}
+            to="/company"
+            className="w-42 !md:w-40 flex   text-sm md:text-lg mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
           >
-            Authors Details
+            Information Company
           </Link>
           <a
-            href="https://wh.ms/201005550808"
-            className="w-32 md:w-40 text-sm md:text-lg  mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+            href="https://wh.ms/201062251111"
+            className="w-42 md:w-40 text-sm md:text-lg  mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
             target="_blank"
-            // onClick={() => navigate("/error-page")}
           >
             Contact WhatsApp
           </a>
