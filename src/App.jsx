@@ -4,8 +4,6 @@ import Home from "./pages/home";
 import UserDetails from "./pages/user-details";
 import NotFound from "./pages/not-found";
 import ErrorPage from "./pages/error-page";
-import Header from "./components/layout/header/header";
-import Footer from "./components/layout/footer/footer";
 
 function App() {
   return (

@@ -34,20 +34,23 @@ const Home = () => {
           className="App-logo h-40 pointer-events-none"
           alt="logo"
         />
-        <p className="text-4xl">Coming Soon</p>
-        <p className="text-lg text-center">
-          Thank you for visiting.Website Under Construction
+        <p className="md:text-4xl text-2xl ">Launching Soon – Stay Tuned!</p>
+        <p className="text-lg  text-center w-[90%]">
+          Welcome to Akl Home! Our website is currently under construction.
+          Soon, you'll explore a unique experience of modern furniture where
+          trust and quality come together in every piece.
         </p>
+        <p className="text-xl font-bold text-center">Akl Home – Because your home deserves the best.</p>
         <div className="flex gap-4">
           <Link
             to="/company"
-            className="w-42 !md:w-40 flex   text-sm md:text-lg mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+            className="w-42 !md:w-40 flex   text-sm md:text-lg mt-6 px-2 py-2  bg-black hover:bg-white hover:text-black  text-white rounded  transition duration-300 text-center"
           >
             Information Company
           </Link>
           <a
-            href="https://wh.ms/201062251111"
-            className="w-42 md:w-40 text-sm md:text-lg  mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+            href="https://wh.ms/201558820103"
+            className="w-42 md:w-40 text-sm md:text-lg  mt-6 px-2 py-2 bg-black text-white rounded hover:bg-white hover:text-black transition duration-300 text-center"
             target="_blank"
           >
             Contact WhatsApp

@@ -4,12 +4,12 @@ import "../styles/home.css"; // Still used for animation
 import { Link } from "react-router-dom";
 const UserDetails = () => {
   const user = {
-    name: "Alwatania Candle",
-    email: "info@alwataniacandle.com",
-    phone: "+201062251111",
-    address: "Dr.Timur Street, El-Mokattam, Egypt",
+    name: "AKL HOME",
+    email: "info@aklhome.com",
+    phone: "+201558820103",
+    address: "New Cairo , Egypt",
     profilePicture:
-      "/assets/images/452477354_988127929990042_7145222584588762322_n.jpg",
+      "/assets/images/logo.jpeg",
   };
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const UserDetails = () => {
               {user.email}
             </p>
             <a
-              href="https://wh.ms/201062251111"
+              href="https://wh.ms/201558820103"
               target="_blank"
               className="text-gray-600 text-start justify-start md:text-lg text-sm"
             >
@@ -49,7 +49,8 @@ const UserDetails = () => {
       </div>
       <Link
         to={"/"}
-        className="w-40 sm:w-26 mt-6 px-2 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition duration-300 text-center"
+        className="w-42 !md:w-40 flex    text-sm md:text-lg mt-6 px-4 py-2  bg-black hover:bg-white hover:text-black  text-white rounded  transition duration-300 text-center"
+
       >
         Back Home Page
       </Link>
